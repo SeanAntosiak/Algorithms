@@ -2,8 +2,17 @@
 
 import sys
 
+
 def making_change(amount, denominations):
-  pass 
+    if n == 0:
+        return(1)
+    elif (n >= 0) & (n < 5):
+        return(n)
+    elif (n >= 5) & (n < 10):
+        return(2)
+    elif (n >= 10) & (n < 25):
+        return()
+  pass
 
 
 if __name__ == "__main__":
@@ -15,3 +24,11 @@ if __name__ == "__main__":
     print("There are {ways} ways to make {amount} cents.".format(ways=making_change(amount, denominations), amount=amount))
   else:
     print("Usage: making_change.py [amount]")
+
+making_change(10, [1, 5, 10, 25, 50])
+
+1s
+5s
+5s 1s
+10s 1s
+10s 5s 1s
