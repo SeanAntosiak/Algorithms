@@ -2,8 +2,17 @@
 
 import argparse
 
+
 def find_max_profit(prices):
-  pass
+    max_profit = float('-inf')
+    index = 1
+    for p in prices:
+        for i in range(index, len(prices)):
+            profit = prices[i] - p
+            if profit > max_profit:
+                max_profit = profit
+        index += 1
+    return(max_profit)
 
 
 if __name__ == '__main__':
