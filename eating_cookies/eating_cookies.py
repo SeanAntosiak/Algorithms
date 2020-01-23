@@ -12,7 +12,7 @@ def eating_cookies(n, cache=None):
     elif n == 1:
         return(1)
     elif n == 2:
-        return(3)
+        return(2)
     elif n == 3:
         return(4)
     else:
